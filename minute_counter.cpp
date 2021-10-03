@@ -74,15 +74,17 @@ int main(){
     period starting; 
     period ending;
 
+    cout << "Enter Start time: ";
     starting.hour = starting.get_hour();
     starting.minute = starting.get_minute();
     starting.halve = starting.get_halve();
     cout << "Start: "; display_time(starting.hour, starting.minute, starting.halve);
     starting.total_minutes = count_minutes(starting.hour, starting.minute, starting.halve);
     
-    ending.hour = 7;
-    ending.minute = 30;
-    ending.halve = "PM";
+    cout << "Enter End time: ";
+    ending.hour = ending.get_hour();
+    ending.minute = ending.get_minute();
+    ending.halve = ending.get_halve();
     cout << "End: "; display_time(ending.hour, ending.minute, ending.halve);
     ending.total_minutes = count_minutes(ending.hour, ending.minute, ending.halve);
 
